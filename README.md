@@ -1,42 +1,47 @@
-# 🖥️ Inventário de Computadores (Python)
+# Inventário de Computadores (Python)
 
-Um projeto simples e eficiente para coletar informações de hardware e sistema operacional usando Python.  
-Ele gera um inventário completo contendo:
+Projeto de estudo em Python para coletar informações básicas de um computador e registrar os dados em CSV.
+
+## Informações coletadas
 
 - Nome do computador
-- Usuário logado
-- CPU
-- Memória RAM total
-- Espaço total e livre do disco
-- Sistema operacional (nome + versão)
-- Endereço IPv4
+- Usuário conectado
+- Sistema operacional
+- Processador
+- Memória RAM
+- Espaço total e livre em disco
+- Endereço IP e MAC
+- Status básico de conectividade
+- Data e hora da coleta
 
-As informações são salvas em um arquivo **inventario.csv** automaticamente.
+## Tecnologias utilizadas
 
----
+- Python 3
+- psutil
+- platform
+- socket
+- uuid
+- csv
 
-## 🚀 Tecnologias utilizadas
+## Como executar
 
-- **Python 3**
-- **psutil** (para coletar informações do sistema)
-- **platform** (nativa do Python)
-- **getpass** (nativa do Python)
-- **csv** (nativa do Python)
+1. Instale o Python 3.
+2. Instale o psutil:
 
-▶️ Como executar o projeto
+```bash
+pip install psutil
+```
 
-1. Abra o terminal na pasta do projeto
+3. Execute:
 
-2. Execute o script:
-
+```bash
 python inventario.py
+```
 
-3. Será criado/atualizado o arquivo:
+O script cria ou atualiza o arquivo `inventario.csv`.
 
-inventario.csv
+## O que pratiquei
 
-### Exemplo de saída do CSV
+O objetivo foi praticar automação simples, coleta de informações do sistema, organização de dados e geração de arquivos CSV.
 
-computador,usuario,cpu,ram_total_gb,disco_total_gb,disco_livre_gb,so,ipv4
-DESKTOP-1234,joao,i5-7400,8.0,465.0,123.5,Windows 10,192.168.0.12
-
+> Projeto pessoal de estudo e portfólio. Não representa experiência profissional.
